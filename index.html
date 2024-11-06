@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Gamer Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="text-center">
+        <div class="container">
+            <h1>Bem-vindo à Gamer Center!</h1>
+            <p>Os melhores produtos para gamers</p>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section id="destaque" class="container my-5">
+        <h2>Destaques</h2>
+        <div class="row">
+            <!-- Card de Produto -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/imagem1.jpeg" class="card-img-top" alt="Imagem do Jogo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jogo 2</h5>
+                        <p class="card-text">Jogo top de Linha</p>
+                        <p class="price" style="color: red; font-size: 1.2em; font-weight: bold;">R$ 152,00</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita para outros produtos se necessário -->
+        </div>
+    </section>
+
+    <!-- Novidades -->
+    <section id="novidades" class="container my-5">
+        <h2>Novidades</h2>
+        <div id="carouselNovidades" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img1.jpeg" class="d-block w-100" alt="Novidade 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img2.jpeg" class="d-block w-100" alt="Novidade 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselNovidades" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselNovidades" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="container my-5">
+        <h2>Galeria</h2>
+        <div class="row">
+            <div class="col-md-3"><img src="assets/galeria1.jpeg" alt="Imagem 1" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/galeria2.jpeg" alt="Imagem 2" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/galeria3.jpeg" alt="Imagem 3" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/galeria4.jpeg" alt="Imagem 4" class="img-fluid"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Gamer Center. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
